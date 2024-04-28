@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 git clone https://github.com/Yusuf-Goren/leaflet-frontend.git
 
-## Available Scripts
+## For Running Frontend
 
 In the project directory, you can run:
 
