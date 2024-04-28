@@ -115,7 +115,7 @@ export default function LeafletMapContainer() {
 
           <a
             style={{ color: "black" }}
-            href={`data:text/json;charset=utf-16,${encodeURIComponent(
+            href={`data:text/json;charset=utf-8,${encodeURIComponent(
               JSON.stringify(markers)
             )}`}
             download="filename.json"
