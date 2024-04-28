@@ -1,0 +1,97 @@
+.leaflet-container {
+  width: 80vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: black;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  gap: 1em;
+}
+.delete {
+  cursor: pointer;
+}
+.list {
+  overflow: auto;
+  width: 20vw;
+  padding: 2em;
+  position: relative;
+  height: calc(100vh - 4em);
+}
+.list h2 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.list ul {
+  position: relative;
+  padding: 0;
+}
+.list ul li {
+  position: relative;
+  left: 0;
+  color: #fce4ec;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 2px solid #f50057;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.list ul li:hover {
+  left: 10px;
+}
+.list ul li span {
+  position: relative;
+  padding: 8px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+.list ul li:hover span {
+  color: #111;
+}
+.list ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f50057;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.list ul li:hover:before {
+  transform: scaleX(1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.buttons a {
+  text-decoration: none !important;
+}
+
+.button {
+  cursor: pointer;
+  background: #f50057;
+  border-radius: 10px;
+  color: white;
+  padding: 1em;
+}
+
+.disabled {
+  pointer-events: none;
+  color: #ccc;
+}
